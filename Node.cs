@@ -112,10 +112,14 @@ namespace AISearchSample
 
         }
 
-
         public void addNeighbor(Node n)
         {
             this.neighbors.Add(n);
+        }
+
+        private void addFirst(Node n)
+        {
+            this.neighbors.Insert(0, n);
         }
 
         public void removeNeighbor(Node n)
